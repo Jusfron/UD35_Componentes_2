@@ -1,1 +1,15 @@
-<p>listado works!</p>
+<div class="container">
+    <h1>Listado de contactos</h1>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Mensaje</th>
+        </tr>
+        <tr *ngFor="let contacto of contactos">
+            <td>{{contacto.nombre}}</td>
+            <td>{{contacto.email}}</td>
+            <td>{{contacto.mensaje}}</td>
+        </tr>
+    </table>
+</div>

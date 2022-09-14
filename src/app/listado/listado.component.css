@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+}
+
+td, th {
+    padding: 10px;
+}
+
+tr {
+    border-bottom: 1px solid lightgray;
+}

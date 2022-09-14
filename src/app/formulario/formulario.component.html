@@ -1,1 +1,36 @@
-<p>formulario works!</p>
+<div class="container-fluid p-4">
+    <h1 class="m-2">Formulario de contacto</h1>
+    <div class="row m-2">
+        <label class="col-4">Nombre</label>
+        <input class="col-8" placeholder="Nombre y apellido" #nombre>
+    </div>
+    <div class="row m-2">
+        <span class="col-4"></span><label class="col-8 error">{{errorNombre}}</label>
+    </div>
+    <div class="row m-2">
+        <label class="col-4">Email</label>
+        <input class="col-8" placeholder="ejemplo@dominio.com" #email>
+    </div>
+    <div class="row m-2">
+        <span class="col-4"></span><label class="col-8 error">{{errorEmail}}</label>
+    </div>
+    <div class="row m-2">
+        <label class="col-4">Mensaje</label>
+        <textarea class="col-8" #mensaje ></textarea>
+    </div>
+    <div class="row m-2">
+        <span class="col-4"></span><label class="col-8 error">{{errorMensaje}}</label>
+    </div>
+    <div class="row m-2">
+        <label class="col-4">2 + 3 = ?</label>
+        <input class="col-8" placeholder="Respuesta" #respuesta>
+        
+    </div>
+    <div class="row m-2">
+        <span class="col-4"></span><label class="col-8 error">{{errorRespuesta}}</label>
+    </div>
+    <div class="row m-2">
+        <div class="col"><button class="btn btn-primary" (click)="enviarContacto(nombre.value, email.value, mensaje.value, respuesta.value)" >Guardar</button></div>
+        
+    </div>
+</div>
